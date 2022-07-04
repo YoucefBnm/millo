@@ -13,16 +13,17 @@
         margin-bottom: 8px;
         img {
             width: 100%;
+            filter: brightness(1.3);
+
         }
     }
     &__detail {
         @include mixins.flexColumn;
         color: base.$color-primary;
         font: inherit;
-        margin-bottom: 8px;
     }
     &__name {
-        font-weight: 600;
+        font-weight: 500;
         line-height: .8;
     }
     &__price {
@@ -30,6 +31,7 @@
     }
 
     &__colors {
+        margin-bottom: 15px;
         @include mixins.flexRow;
         justify-content: flex-start;
         span {

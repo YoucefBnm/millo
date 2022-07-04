@@ -1,15 +1,19 @@
 import './App.scss';
-import Header from './components/Header/Header';
+import { Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav/Nav';
-import Card from './components/Card/Card';
+import Home from './routes/Home/Home';
+import Login from './routes/Login/Login';
+import Shop from './routes/Shop/Shop';
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
-      <Header />
-      <Card />
-    </div>
+    <Routes>
+        <Route path='/' element={<Nav />}>
+          <Route index element={<Home />} />
+          <Route path='login' element={<Login />} />
+          <Route path='shop' element={<Shop />} />
+        </Route>
+      </Routes>
   );
 }
 
