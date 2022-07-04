@@ -1,10 +1,15 @@
+import Footer from "../../components/Footer/Footer"
+import FormInput from "../../components/FormInput/FormInput"
 
 const Login = () => {
 
     return (
-        <div className="login">
-            login
-        </div>
+        <>
+            <form className="login" style={{width: '40%', margin: '35px auto'}}>
+                <FormInput />
+            </form>
+            <Footer />
+        </>
     )
 }
 

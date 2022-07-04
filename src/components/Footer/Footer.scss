@@ -1,0 +1,55 @@
+@use '../../sass/base';
+@use '../../sass/mixins';
+
+.footer {
+    background-color: base.$color-primary;
+    @include mixins.flexRow;
+    align-items: flex-start;
+    gap: 110px;
+
+    &__col {
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        gap: 10px;
+        .link {
+
+        }
+    }
+    &__item {
+        
+    }
+
+    &__social {
+        flex-grow: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span {
+            margin-top: 140px;
+            color: #ddd;
+            font-size: 12px;
+        }
+    }
+    &__list-social {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 20px;
+        svg {
+            width: 32px;
+            height: 32px;
+        }
+        
+    }
+    
+}

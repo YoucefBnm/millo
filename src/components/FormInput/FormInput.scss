@@ -1,0 +1,41 @@
+@use '../../sass/base';
+
+.formGroup {
+
+    &__input {
+        margin: 10px 0;
+        width: 100%;
+        width: 100%;
+        padding: 12px;
+        font: inherit;
+        border: 2px solid base.$color-grey;
+        border-radius: 0;
+        transition: all .2s;
+        outline: 0;
+        -webkit-appearance: none;
+        appearance: none;
+        user-select: text;
+        line-height: inherit;
+        color: base.$color-primary;
+        font-weight: 400;
+        &:focus {
+            border-color: base.$color-primary;
+            border-width: 2px;
+            box-shadow: 0 0 8px #fff;
+            outline: #000 solid 2px;
+            outline-offset: 1px;
+        }
+
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+
+        span {
+            cursor: pointer;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+    }
+}
