@@ -1,5 +1,12 @@
 @use './base';
 
+.hero-text {
+    font-weight: 500;
+    line-height: 160.5%;
+    text-align: center;
+    letter-spacing: 0.025em;
+    margin-bottom: 10px;
+}
 .heading {
     font-family: inherit;
     text-transform: uppercase;
