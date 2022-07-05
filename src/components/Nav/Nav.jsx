@@ -11,9 +11,9 @@ const Nav = () => {
     return (
         <Fragment>
             <nav className="nav">
-                <div className="nav__logo">
+                <Link to="/" className="nav__logo">
                     <Logo />
-                </div>
+                </Link>
                 <ul className="nav__list nav__list--links">
                     <li className="nav__item">
                         <Link to="/" className="nav__link link link--light">HOME</Link>
