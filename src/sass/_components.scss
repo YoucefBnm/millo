@@ -70,10 +70,10 @@
     }
     &--border {
         border-color: base.$color-primary;
-        background-color: #FFFFFF;
+        background-color: transparent;
         &:hover {
-            color: #FFFFFF;
             background-color: base.$color-primary;
+            color: #FFFFFF;
         }
     }
 }
