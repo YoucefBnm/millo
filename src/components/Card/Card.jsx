@@ -1,21 +1,40 @@
 import './Card.scss'
-import Asics from '../../assets/asics.jpg'
-const Card = () => {
+import { useState } from 'react'
+
+const Card = ({image,colors,title,price}) => {
+    const[activeImage,setActiveImage] = useState(0)
     
     return (
         <div className="card">
-            <span>best seller</span>
+            <div className="card__tag">
+                <span>best seller</span>
+            </div>
             <div className="card__img">
-                <img src={Asics} alt="" />
+                {
+                    colors.map((img,index) => (
+                        <img 
+                            src={image} 
+                            alt={`${title} shoes`} 
+                            data-active={activeImage === index}
+                        />
+                    ))
+                }
             </div>
             <div className="card__colors">
-                <span style={{backgroundColor: '#00AED1'}} className='active'/>
-                <span style={{backgroundColor: '#FFFFFF'}}/>
-                <span style={{backgroundColor: '#000'}}/>
+                {
+                    colors.map((color,index) => (
+                        <span 
+                            key={index}
+                            onClick={() => setActiveImage(index)}
+                            className={index===activeImage && 'active'}
+                            style={{backgroundColor: color.color}}
+                        />
+                    ))
+                }
             </div>
             <div className="card__detail">
-                <p className="card__name">ASICS</p>
-                <p className="card__price">$154.44</p>
+                <p className="card__name">{title}</p>
+                <p className="card__price">${Number(price).toFixed(2)}</p>
             </div>
         </div>
     )

@@ -1,0 +1,14 @@
+@use '../../sass/base';
+
+.favorites {
+    &__container {
+        cursor: grabbing;
+    }
+    .swiper-scrollbar {
+        background: rgba(base.$color-primary, .13);
+    }
+    .swiper-scrollbar-drag {
+        background: base.$color-primary;
+        width: 50px !important;
+    }
+}
