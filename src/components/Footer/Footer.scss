@@ -5,16 +5,29 @@
     background-color: base.$color-primary;
     @include mixins.flexRow;
     align-items: flex-start;
-    gap: 110px;
+    gap: 20px;
 
+    &__logo {
+        margin-bottom: 5px;
+        display: flex;
+        align-items: flex-start;
+        line-height: 1;
+    }
     &__col {
-
+        flex-basis: calc(20% - 20px);
         h2 {
             font-size: 18px;
             font-weight: 600;
+            line-height: 1;
         }
     }
-
+    &__intro {
+        flex-basis: 40%;
+        margin-right: 20px;
+        p {
+            color: #ccc;
+        }
+    }
     &__list {
         display: flex;
         flex-direction: column;
@@ -22,18 +35,19 @@
         justify-content: start;
         gap: 10px;
         .link {
+            color: #ccc;
 
         }
     }
     &__item {
-        
+        line-height: 1.2;
     }
 
     &__social {
-        flex-grow: 2;
+        flex-basis: 35%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+
         span {
             margin-top: 140px;
             color: #ddd;

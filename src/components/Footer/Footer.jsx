@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import './Footer.scss'
+import { ReactComponent  as Logo } from '../../assets/logo-white.svg'
 import { ReactComponent  as IconFacebook } from '../../assets/logo-facebook.svg'
 import { ReactComponent  as IconTwitter } from '../../assets/logo-twitter.svg'
 import { ReactComponent  as IconInstagram } from '../../assets/logo-instagram.svg'
@@ -8,6 +9,14 @@ import { ReactComponent  as IconPinterest} from '../../assets/logo-pinterest.svg
 const Footer = () => (
     <Fragment>
         <footer className="footer">
+            <div className="footer__col footer__intro">
+                <div className="footer__logo">
+                    <Logo />
+                </div>
+                <p>
+                    <strong>MILLO </strong> is a marketplace specializing in shoes, we have the best experts who picks the most comfortable shoes for your daily activities, with deversivied gammes focusing on athletic shoes and picking the most suitable and athentic.
+                </p>
+            </div>
             <div className="footer__col">
                 <h2 className="heading heading--title heading--light">SERVICES</h2>
                 <ul className="footer__list">

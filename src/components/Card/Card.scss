@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 10px 0;
+    padding-top: 35px;
     gap: 10px;
     // width: 310px;
     height: 296px;
@@ -40,6 +41,7 @@
         flex: none;
         flex-grow: 0;
         position: relative;
+        user-select: none;
         img {
             position: absolute;
             width: 100%;
@@ -52,6 +54,7 @@
         @include mixins.flexColumn;
         color: base.$color-primary;
         font: inherit;
+        margin-top: 5px;
     }
     &__name {
         font-weight: 600;
