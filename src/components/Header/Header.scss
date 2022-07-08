@@ -8,7 +8,7 @@
     &::after {
         content: '';
         @include mixins.absolutePosition;
-        background-color: rgba(base.$color-primary, .13);
+        background: linear-gradient(128.72deg, rgba(base.$color-primary, 0.4) 35.52%, rgba(base.$color-primary, 0.13) 54.77%);
     }
     &__img {
         @include mixins.absolutePosition;
