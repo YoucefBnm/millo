@@ -4,6 +4,7 @@ const Card = () => {
     
     return (
         <div className="card">
+            <span>best seller</span>
             <div className="card__img">
                 <img src={Asics} alt="" />
             </div>
