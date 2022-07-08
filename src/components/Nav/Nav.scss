@@ -2,9 +2,9 @@
 @use '../../sass/mixins';
 
 .nav {
-    background-color: base.$color-primary;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: #FFFFFF;
+    padding-top: 15px;
+    padding-bottom: 15px;
     @include mixins.flexRow;
     justify-content: space-between;
     &__logo {
@@ -30,6 +30,7 @@
             width: 20px;
             height: 20px;
             cursor: pointer;
+            stroke-width: 2;
         }
     }
 }

@@ -16,16 +16,16 @@ const Nav = () => {
                 </Link>
                 <ul className="nav__list nav__list--links">
                     <li className="nav__item">
-                        <Link to="/" className="nav__link link link--light">HOME</Link>
+                        <Link to="/" className="nav__link link">HOME</Link>
                     </li>
                     <li className="nav__item">
-                        <Link to="/shop" className="nav__link link link--light">SHOP</Link>
+                        <Link to="/shop" className="nav__link link">SHOP</Link>
                     </li>
                     <li className="nav__item nav__dropdown">
-                        <span href="/" className="nav__link link link--light">CATEGORIES</span>
+                        <span href="/" className="nav__link link">CATEGORIES</span>
                     </li>
                     <li className="nav__item nav__dropdown">
-                        <span href="/" className="nav__link link link--light">BRANDS</span>
+                        <span href="/" className="nav__link link">BRANDS</span>
                     </li>
                 </ul>
                 <ul className="nav__list nav__list--utils">
