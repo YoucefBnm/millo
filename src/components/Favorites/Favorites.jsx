@@ -199,7 +199,7 @@ const Favorites = () => {
             images.map(item => (
               <SwiperSlide key={item.id}>
                 <Card 
-                  image={item.image}
+                  src={item.image}
                   colors={item.colors}
                   title={item.name}
                   price={item.price}

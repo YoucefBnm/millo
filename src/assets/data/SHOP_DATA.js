@@ -1,4 +1,7 @@
 import { FAVORITE_DATA } from "./FAVORITE_DATA"
+
+
+
 export const SHOP_DATA = [
     ...FAVORITE_DATA,
     {
@@ -1146,7 +1149,7 @@ export const SHOP_DATA = [
                 image: 'https://m.media-amazon.com/images/I/71N7VWBC2wS._AC_UX695_.jpg'
             },
             {
-                colors: 'black',
+                color: 'black',
                 image: 'https://m.media-amazon.com/images/I/71rAXY2LyHL._AC_SX695._SX._UX._SY._UY_.jpg'
             },
             {
@@ -1558,5 +1561,8 @@ export const CATEGORIES = [...new Set(getCategories)]
 const getBrands = SHOP_DATA.map(item => item.brand)
 export const BRANDS = [...new Set(getBrands)]
 
-const getSizes = SHOP_DATA.map(item => item.sizes)
-export const SIZES = [...new Set(...getSizes)]
+const getSizes = SHOP_DATA.map(item => item.sizes).flat(1)
+export const SIZES = [...new Set(getSizes)]
+
+const getColors = SHOP_DATA.map(item => item.colors)
+export const COLORS = [...new Set(getColors.map(item => item.map(item => item.color)).flat(1))]

@@ -13,7 +13,8 @@ const Card = ({image,colors,title,price}) => {
                 {
                     colors.map((img,index) => (
                         <img 
-                            src={image} 
+                            key={index}
+                            src={img.image} 
                             alt={`${title} shoes`} 
                             data-active={activeImage === index}
                         />

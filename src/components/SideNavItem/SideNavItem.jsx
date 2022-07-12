@@ -24,12 +24,16 @@ const SideNavItem = ({title,items,handleClick,tag}) => {
                 >
                     {
                         items.map((item,index) => (
+                            title !== 'color' ?
                             <li 
                                 key={index}
                                 className="sideNavItem__item"
                                 onClick={() => handleClick(tag,item)}
                             >
                                 <span>{item}</span>
+                            </li>
+                            : <li key={index}>
+                                <span style={{backgroundColor: {item}}} />
                             </li>
                         ))
                     }
