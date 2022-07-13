@@ -4,6 +4,7 @@ import { useState } from "react"
 import { useCallback } from "react"
 import SideNavItem from '../../components/SideNavItem/SideNavItem'
 import Card from '../../components/Card/Card'
+import CustomSelect from '../../components/CustomSelect/CustomSelect'
 
 const Shop = () => {
     
@@ -52,8 +53,8 @@ const Shop = () => {
                             <SideNavItem
                                 title='brand'
                                 items={BRANDS}
-                                handleClick={displayFilterResult}
                                 tag='brand'
+                                handleClick={displayFilterResult}
                             />
                             <SideNavItem
                                 title='color'
@@ -71,7 +72,7 @@ const Shop = () => {
                     </div>
                 </nav>
                 <div className="shop__sort">
-                    sort 
+                    <CustomSelect /> 
                 </div>
                 <div className="shop__products">
                     {

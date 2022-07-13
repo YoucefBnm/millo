@@ -27,7 +27,7 @@ const Card = ({image,colors,title,price}) => {
                         <span 
                             key={index}
                             onClick={() => setActiveImage(index)}
-                            className={index===activeImage && 'active'}
+                            className={index===activeImage ? 'active' : null}
                             style={{backgroundColor: color.color}}
                         />
                     ))
